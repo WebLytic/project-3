@@ -1,0 +1,246 @@
+*{margin: 0; padding: 0; font-family: sans-serif;}
+
+/*--------------navbar------*/
+.navbar ul li
+{
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after
+{
+    width: 100%;
+}
+
+
+/*----------------banner----------*/
+
+#banner
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) , url(images/interior-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*--------------banner's text-----------*/
+.banner-text
+{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.banner-text h1
+{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.banner-text p
+{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+/*-----------banner's buttons--------*/
+#banner .button
+{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#banner span
+{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+/*    border-radius: 25px;*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+#banner button:hover span
+{
+    width: 100%;
+}
+/*button:hover
+{
+    border: none;
+}*/
+
+/*-----------------About-------------*/
+#about
+{
+/*    padding-top: 50px;
+    padding-bottom: 50px;*/
+    padding: 70px;
+
+}
+#about .btn
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.about-content
+{
+    padding-top: 20px;
+}
+.skills-bar p
+{    
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress-bar
+{
+    border-radius: 16px;
+}
+.progress
+{
+    border-radius: 16px !important;
+    margin-bottom: 20px;
+}
+/*-------------------------Services-----------*/
+#services
+{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/interior-2.jpg);
+    background-size: cover;
+    color: #efefef !important;
+    background-attachment: fixed;
+/*    padding-top: 50px;
+    padding-bottom: 50px;*/
+    padding: 50px;
+}
+#services h1
+{
+    text-align: center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+#services h1::after
+{
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.services
+{
+    margin-top: 40px;
+}
+.icon
+{
+    font-size: 40px;
+    margin: 20px auto;
+    padding-top: 14px;
+    height: 90px;
+    width: 90px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+#services p
+{
+    font-size: 15px;
+    margin-top: 20px;
+    color: #ccc;
+}
+.services:hover
+{
+    background: #009688;
+    cursor: pointer;
+    transition: 0.7s;
+}
+/*------------------------Promo-------------*/
+#promo
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 38px;
+}
+/*---------------Get in Touch--------------*/
+#contact h1
+{
+    text-align: center;
+    padding-bottom: 20px;
+}
+#contact
+{
+    background: #555;
+/*    padding-top: 40px;
+    padding-bottom: 40px;*/
+    padding: 70px;
+    color: black;
+}
+.contact-form
+{
+    padding: 15px;
+}
+.form-control
+{
+    border-radius: 0 !important;
+    border: 2px solid !important;
+}
+.follow
+{
+    background: #555;
+    border: 2px solid;
+    padding: 10px;
+    margin: 15px;
+}
+.contact-info .fa
+{
+    margin: 10px;
+    color: #009688;
+    font-weight: bold;
+}
+#contact .form-control{
+    background-color: #555;
+    color: #000;
+}
+::placeholder{
+    color: #000 !important;
+    opacity: 1;
+}
+#contact button{
+    margin-top: 20px;
+}
+/*--------------------Footer-------------------*/
+#footer
+{
+    background: #333;
+    color: #009688;
+    padding: 12px;
+}
